@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="6" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="21" time="161.028">
+    <testcase classname="Register | users could register with new accounts" name="guest user could register with valid data successfully" time="16.554">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.result&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a13061154cef750fb643e9b57a1dc301, findElement {using=css selector, value=div.result}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59762}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59762/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a13061154cef750fb643e9b57a1dc301" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user go to register page..............................................passed
+When user chooses gender....................................................passed
+And user enters first name..................................................passed
+And user enters last name...................................................passed
+And user chooses date of birth..............................................passed
+And user enters email address...............................................passed
+And user enters company name................................................passed
+And user enters password....................................................passed
+And user enters confirm password............................................passed
+And user clicks on register button..........................................passed
+Then success registration message displayed.................................failed
+And user clicks on continue button to return to home page...................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.result"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a13061154cef750fb643e9b57a1dc301, findElement {using=css selector, value=div.result}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59762}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59762/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a13061154cef750fb643e9b57a1dc301
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at org.example.stepDefs.D01_registerStepDef.successRegistrationMessageDisplayed(D01_registerStepDef.java:82)
+	at ✽.success registration message displayed(file:///C:/Users/PC/OneDrive/Desktop/HERo/FWD_Automation/E-Commerce_Udacity/src/main/resources/features/F01_Register.feature:15)
+]]></failure>
+    </testcase>
+    <testcase classname="Login | users could login with their accounts" name="user could log in with valid email and password" time="5.083">
+        <system-out><![CDATA[Given User open login page..................................................passed
+When User enter email and password..........................................passed
+And User click on login button..............................................passed
+Then User login successfully and return to home page........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login | users could login with their accounts" name="user could log in with invalid email and password" time="4.372">
+        <system-out><![CDATA[Given User open login page..................................................passed
+When User enter invalid email and password..................................passed
+And User click on login button..............................................passed
+Then User login failed and error message appears............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Currencies | users could select currency" name="user could select euro currency" time="4.352">
+        <system-out><![CDATA[Given User log in with email and password...................................passed
+When User select euro currency from drop down menu..........................passed
+Then All items prices change to euro........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search | users could search" name="user could search for laptop" time="3.769">
+        <system-out><![CDATA[When User enter a product name "laptop" in search text field................passed
+And User click on search button.............................................passed
+Then Search result appears with products related to the product name "laptop".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search | users could search" name="user could search for laptop 2" time="3.346">
+        <failure message="The following asserts failed:&#10;&#9;expected [true] but found [false],&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When User enter a product name "book" in search text field..................passed
+And User click on search button.............................................passed
+Then Search result appears with products related to the product name "book".failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D04_searchStepDef.search_result_appears_with_products_related_to_the_product_name(D04_searchStepDef.java:43)
+	at ✽.Search result appears with products related to the product name "book"(file:///C:/Users/PC/OneDrive/Desktop/HERo/FWD_Automation/E-Commerce_Udacity/src/main/resources/features/F04_Search.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Search | users could search" name="user could search for laptop 3" time="4.082">
+        <system-out><![CDATA[When User enter a product name "nike" in search text field..................passed
+And User click on search button.............................................passed
+Then Search result appears with products related to the product name "nike".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search | users could search" name="user could search for sku" time="5.895">
+        <system-out><![CDATA[When User enter a product sku "SCI_FAITH" in search text field..............passed
+And User click on search button.............................................passed
+Then Search result appears with products related to the product sku "SCI_FAITH".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search | users could search" name="user could search for sku 2" time="5.098">
+        <system-out><![CDATA[When User enter a product sku "APPLE_CAM" in search text field..............passed
+And User click on search button.............................................passed
+Then Search result appears with products related to the product sku "APPLE_CAM".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search | users could search" name="user could search for sku 3" time="6.413">
+        <system-out><![CDATA[When User enter a product sku "SF_PRO_11" in search text field..............passed
+And User click on search button.............................................passed
+Then Search result appears with products related to the product sku "SF_PRO_11".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="hoverCategories | users could select any category" name="user could select any category" time="8.342">
+        <system-out><![CDATA[Given User at home page.....................................................passed
+When User hover to a category and click on one of its sub-categories........passed
+Then User will navigate to a page contains products about that sub-category.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="homeSliders | users could select and open home sliders" name="user could select and open the first home slider" time="13.622">
+        <failure message="Expected condition failed: waiting for url to be &quot;https://demo.nopcommerce.com/nokia-lumia-1020&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59954}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59954/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ab1f1a21ab9f5873b6b1bfc66089fef0" type="org.openqa.selenium.TimeoutException"><![CDATA[Given User at home page.....................................................passed
+When User click on first slider nokia image.................................passed
+Then User navigate to nokia product details page............................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be "https://demo.nopcommerce.com/nokia-lumia-1020". Current url: "https://demo.nopcommerce.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59954}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59954/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab1f1a21ab9f5873b6b1bfc66089fef0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.stepDefs.D06_homeSlidersStepDef.user_navigate_to_nokia_product_details_page(D06_homeSlidersStepDef.java:29)
+	at ✽.User navigate to nokia product details page(file:///C:/Users/PC/OneDrive/Desktop/HERo/FWD_Automation/E-Commerce_Udacity/src/main/resources/features/F06_homeSliders.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="homeSliders | users could select and open home sliders" name="user could select and open the second home slider" time="15.964">
+        <failure message="Expected condition failed: waiting for url to be &quot; https://demo.nopcommerce.com/iphone-6&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59972/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 13b8ff1bc1b2a5139244638ad15a8046" type="org.openqa.selenium.TimeoutException"><![CDATA[Given User at home page.....................................................passed
+When User click on second slider iphone image...............................passed
+Then User navigate to iphone product details page...........................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be " https://demo.nopcommerce.com/iphone-6". Current url: "https://demo.nopcommerce.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59972/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b8ff1bc1b2a5139244638ad15a8046
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.stepDefs.D06_homeSlidersStepDef.user_navigate_to_iphone_product_details_page(D06_homeSlidersStepDef.java:43)
+	at ✽.User navigate to iphone product details page(file:///C:/Users/PC/OneDrive/Desktop/HERo/FWD_Automation/E-Commerce_Udacity/src/main/resources/features/F06_homeSliders.feature:11)
+]]></failure>
+    </testcase>
+    <testcase classname="followUs | users could open facebook, twitter , rss , youtube links" name="user could open the facebook page" time="6.014">
+        <system-out><![CDATA[Given User at home page.....................................................passed
+When User click on facebook icon............................................passed
+Then "https://www.facebook.com/nopCommerce" is opened in new tab............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="followUs | users could open facebook, twitter , rss , youtube links" name="user could select and open the twitter page" time="7.455">
+        <system-out><![CDATA[Given User at home page.....................................................passed
+When User click on twitter icon.............................................passed
+Then "https://twitter.com/nopCommerce" is opened in new tab.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="followUs | users could open facebook, twitter , rss , youtube links" name="user could select and open the rss page" time="8.197">
+        <failure message="expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[Given User at home page.....................................................passed
+When User click on rss icon.................................................passed
+Then "https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab.failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefs.D07_followUsStepDef.is_opened_in_new_tab(D07_followUsStepDef.java:51)
+	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab(file:///C:/Users/PC/OneDrive/Desktop/HERo/FWD_Automation/E-Commerce_Udacity/src/main/resources/features/F07_followUs.feature:15)
+]]></failure>
+    </testcase>
+    <testcase classname="followUs | users could open facebook, twitter , rss , youtube links" name="user could select and open the youtube page" time="7.856">
+        <system-out><![CDATA[Given User at home page.....................................................passed
+When User click on youtube icon.............................................passed
+Then "https://www.youtube.com/user/nopCommerce" is opened in new tab........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="followUs | users could open facebook, twitter , rss , youtube links" name="user could open the facebook page" time="8.494">
+        <system-out><![CDATA[Given User at home page.....................................................passed
+When User click on facebook icon............................................passed
+Then "https://www.facebook.com/nopCommerce" is opened in new tab............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="followUs | users could open facebook, twitter , rss , youtube links" name="user could select and open the twitter page" time="8.21">
+        <system-out><![CDATA[Given User at home page.....................................................passed
+When User click on twitter icon.............................................passed
+Then "https://twitter.com/nopCommerce" is opened in new tab.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="followUs | users could open facebook, twitter , rss , youtube links" name="user could select and open the rss page" time="6.994">
+        <failure message="expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[Given User at home page.....................................................passed
+When User click on rss icon.................................................passed
+Then "https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab.failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefs.D07_followUsStepDef.is_opened_in_new_tab(D07_followUsStepDef.java:51)
+	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab(file:///C:/Users/PC/OneDrive/Desktop/HERo/FWD_Automation/E-Commerce_Udacity/src/main/resources/features/F08_Wishlist.feature:15)
+]]></failure>
+    </testcase>
+    <testcase classname="followUs | users could open facebook, twitter , rss , youtube links" name="user could select and open the youtube page" time="10.176">
+        <system-out><![CDATA[Given User at home page.....................................................passed
+When User click on youtube icon.............................................passed
+Then "https://www.youtube.com/user/nopCommerce" is opened in new tab........passed
+]]></system-out>
+    </testcase>
+</testsuite>
